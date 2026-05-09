@@ -1470,3 +1470,21 @@ img:hover {
   font-size: 1.2em;
   display: block;
 }
+/* Liens du menu mobile */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 8px 0; /* réduit l’espace entre les liens */
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em; /* taille légèrement réduite */
+  display: block;
+  padding: 5px 0;   /* réduit le padding vertical */
+}
