@@ -1334,3 +1334,70 @@ img:hover {
     bottom: 12px; /* colle les points au bas de l'image */
   }
 }
+/* Pied de page global */
+footer {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+/* Coordonnées */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.footer-contact p,
+.footer-contact a {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Icônes réseaux sociaux */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-social i {
+  font-size: 1.6em;
+  color: #7E0051; /* violet AWLN */
+  transition: transform 0.2s ease;
+}
+
+.footer-social i:hover {
+  transform: scale(1.1);
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* ✅ Ajustements pour mobile */
+@media (max-width: 768px) {
+  .footer-contact {
+    gap: 6px;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .footer-social i {
+    font-size: 1.4em;
+  }
+
+  .footer-copy {
+    font-size: 0.85em;
+  }
+}
