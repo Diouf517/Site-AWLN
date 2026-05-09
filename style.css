@@ -1334,39 +1334,43 @@ img:hover {
     bottom: 12px; /* colle les points au bas de l'image */
   }
 }
-/* Pied de page global */
-footer {
+/* Footer global */
+.footer {
   background-color: #fff;
-  color: #333;
   text-align: center;
-  padding: 25px 10px;
+  padding: 20px 10px;
 }
 
-/* Bloc logo + coordonnées */
-.footer-info {
+/* Bloc principal */
+.footer-top {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* sur mobile, tout en colonne */
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 12px;
 }
 
-.footer-info img {
+/* Logo */
+.footer-logo img {
   width: 120px;
   height: auto;
   margin-bottom: 10px;
 }
 
-.footer-info p,
-.footer-info a {
+/* Coordonnées */
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-info p {
   margin: 0;
   font-size: 1em;
   color: #333;
-  text-decoration: none;
-  font-weight: 500;
 }
 
-/* Icônes réseaux sociaux */
+/* Réseaux sociaux */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -1378,7 +1382,7 @@ footer {
 .social-icons a {
   color: #7E0051; /* violet AWLN */
   font-size: 1.6em;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .social-icons a:hover {
@@ -1386,7 +1390,7 @@ footer {
 }
 
 /* Copyright */
-.footer-copy {
+.footer p:last-child {
   margin-top: 15px;
   font-size: 0.9em;
   color: #555;
@@ -1394,11 +1398,7 @@ footer {
 
 /* ✅ Ajustements pour mobile */
 @media (max-width: 768px) {
-  .footer-info {
-    gap: 8px;
-  }
-
-  .footer-info img {
+  .footer-logo img {
     width: 100px;
   }
 
@@ -1410,7 +1410,7 @@ footer {
     font-size: 1.4em;
   }
 
-  .footer-copy {
+  .footer p:last-child {
     font-size: 0.85em;
   }
 }
