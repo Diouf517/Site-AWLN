@@ -1229,7 +1229,7 @@ img:hover {
     margin: 0 auto;
   }
 }
-/* Carrousel global */
+/* Carrousel */
 .carousel {
   position: relative;
   max-width: 100%;
@@ -1237,7 +1237,7 @@ img:hover {
   overflow: hidden;
 }
 
-/* Images du carrousel */
+/* Images */
 .carousel img {
   width: 100%;
   height: auto;
@@ -1247,11 +1247,12 @@ img:hover {
 /* Points de navigation */
 .dots {
   position: absolute;
-  bottom: 10px; /* proche du bas de l'image */
+  bottom: 0; /* colle les points au bas de l'image */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 8px;
+  padding-bottom: 5px; /* petit espace interne */
 }
 
 .dot {
@@ -1268,37 +1269,37 @@ img:hover {
 /* Texte du carrousel */
 .caption {
   position: absolute;
-  bottom: 40px; /* au-dessus des points */
+  bottom: 35px; /* juste au-dessus des points */
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0,0,0,0.6); /* bande sombre */
+  background-color: rgba(0,0,0,0.6);
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   padding: 6px 12px;
   border-radius: 4px;
   text-align: center;
-  white-space: nowrap; /* force une seule ligne */
+  white-space: nowrap;
 }
 
 /* ✅ Ajustements pour mobile */
 @media (max-width: 768px) {
   .carousel {
-    height: 300px; /* augmente la hauteur sur mobile */
+    height: 320px; /* carrousel plus grand sur mobile */
   }
 
   .carousel img {
     height: 100%;
-    object-fit: cover; /* agrandit l’image sans déformation */
+    object-fit: cover;
   }
 
   .caption {
-    font-size: 0.9em; /* texte plus petit */
+    font-size: 0.9em;
     padding: 5px 10px;
-    bottom: 35px;
+    bottom: 40px; /* garde le texte juste au-dessus des points */
   }
 
   .dots {
-    bottom: 8px; /* colle les points au bas */
+    bottom: 5px; /* colle les points au bas exact de l'image */
   }
 }
