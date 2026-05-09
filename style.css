@@ -1581,16 +1581,3 @@ img:hover {
   color: #7E0051;                  /* ✖ violet */
   transform: scale(1.1);           /* léger zoom */
 }
-/* Carrousel */
-.carousel {
-  position: relative;
-  max-width: 100%;
-  height: 600px; /* ✅ augmenté pour correspondre aux bannières */
-  overflow: hidden;
-}
-
-.carousel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* remplit bien l’espace */
-}
