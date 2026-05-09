@@ -1269,23 +1269,24 @@ img:hover {
 /* Texte du carrousel */
 .caption {
   position: absolute;
-  bottom: 0; /* bande collée au bas de l'image */
-  left: 0;
-  width: 100%; /* traverse toute l'image */
-  background-color: rgba(0, 0, 0, 0.55); /* bande sombre semi-transparente */
+  bottom: 45px; /* juste au-dessus des points */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.55); /* bande sombre ajustée */
   color: #fff;
-  font-size: 1.1em; /* texte plus visible */
+  font-size: 1.1em;
   font-weight: 600;
-  padding: 12px 0;
+  padding: 8px 20px; /* largeur adaptée au texte */
+  border-radius: 4px;
   text-align: center;
-  letter-spacing: 0.5px;
   white-space: nowrap; /* une seule ligne */
+  letter-spacing: 0.5px;
 }
 
 /* Points de navigation */
 .dots {
   position: absolute;
-  bottom: 5px; /* colle les points juste sous la bande sombre */
+  bottom: 10px; /* juste sous la bande sombre */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -1315,11 +1316,12 @@ img:hover {
   }
 
   .caption {
-    font-size: 0.9em; /* texte légèrement réduit sur mobile */
-    padding: 10px 0;
+    font-size: 0.9em;
+    padding: 6px 16px; /* bande ajustée au texte */
+    bottom: 40px;
   }
 
   .dots {
-    bottom: 3px; /* colle les points au bas exact du carrousel */
+    bottom: 5px; /* colle les points au bas exact du carrousel */
   }
 }
