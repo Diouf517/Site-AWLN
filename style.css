@@ -1488,3 +1488,33 @@ img:hover {
   display: block;
   padding: 5px 0;   /* réduit le padding vertical */
 }
+/* Bouton fermer (✖) */
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff; /* toujours blanc */
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+/* Liste des menus */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 45px 0 0 0; /* ✅ descend la liste sous le bouton */
+}
+
+.sidebar ul li {
+  margin: 8px 0; /* espace réduit entre les liens */
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  padding: 6px 0;
+}
