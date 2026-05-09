@@ -1504,7 +1504,7 @@ img:hover {
 .sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 50px 0 0 0; /* ✅ descend la liste sous le bouton */
+  margin: 55px 0 0 0; /* ✅ descend la liste sous le bouton */
 }
 
 .sidebar ul li {
@@ -1517,4 +1517,23 @@ img:hover {
   font-size: 1.2em;
   display: block;
   padding: 6px 0;
+}
+/* Bouton fermer (✖) */
+.close-btn {
+  background: none !important;
+  border: none !important;
+  color: #fff !important;   /* force la couleur blanche */
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 2000;            /* assure qu'il reste visible */
+}
+
+/* Icônes flèches dans le menu */
+.sidebar ul li .arrow {
+  color: #fff !important;   /* force la couleur blanche */
+  margin-right: 8px;
+  font-size: 1.2em;
 }
