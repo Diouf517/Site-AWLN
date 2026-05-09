@@ -1344,24 +1344,23 @@ img:hover {
 /* Bloc principal */
 .footer-top {
   display: flex;
-  flex-direction: column; /* sur mobile, tout en colonne */
-  align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 /* Logo */
 .footer-logo img {
   width: 120px;
   height: auto;
-  margin-bottom: 10px;
 }
 
 /* Coordonnées */
 .footer-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 6px;
+  text-align: left;
 }
 
 .footer-info p {
@@ -1374,13 +1373,11 @@ img:hover {
 .social-icons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 15px;
-  margin-top: 10px;
 }
 
 .social-icons a {
-  color: #7E0051; /* violet AWLN */
+  color: #7E0051;
   font-size: 1.6em;
   transition: transform 0.2s ease;
 }
@@ -1396,13 +1393,26 @@ img:hover {
   color: #555;
 }
 
-/* ✅ Ajustements pour mobile */
+/* ✅ Sur mobile : tout en colonne */
 @media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column; /* passe en colonne */
+    align-items: center;    /* centre tout */
+    text-align: center;
+  }
+
   .footer-logo img {
     width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .footer-info {
+    align-items: center; /* coordonnées centrées */
+    text-align: center;
   }
 
   .social-icons {
+    margin-top: 10px;
     gap: 12px;
   }
 
