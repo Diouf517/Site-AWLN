@@ -1336,31 +1336,38 @@ img:hover {
 }
 /* Pied de page global */
 footer {
-  text-align: center;
   background-color: #fff;
-  padding: 20px 10px;
+  color: #333;
+  text-align: center;
+  padding: 25px 10px;
 }
 
-/* Bloc des coordonnées */
-footer div {
+/* Bloc logo + coordonnées */
+.footer-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 15px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-/* Texte et liens */
-footer p,
-footer a {
+.footer-info img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-info p,
+.footer-info a {
   margin: 0;
   font-size: 1em;
   color: #333;
   text-decoration: none;
+  font-weight: 500;
 }
 
 /* Icônes réseaux sociaux */
-footer .social-icons {
+.social-icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1368,39 +1375,42 @@ footer .social-icons {
   margin-top: 10px;
 }
 
-footer .social-icons i {
-  font-size: 1.6em;
+.social-icons a {
   color: #7E0051; /* violet AWLN */
-  transition: transform 0.2s ease;
+  font-size: 1.6em;
+  transition: transform 0.3s ease;
 }
 
-footer .social-icons i:hover {
+.social-icons a:hover {
   transform: scale(1.1);
 }
 
 /* Copyright */
-footer small {
-  display: block;
-  margin-top: 10px;
+.footer-copy {
+  margin-top: 15px;
   font-size: 0.9em;
   color: #555;
 }
 
 /* ✅ Ajustements pour mobile */
 @media (max-width: 768px) {
-  footer div {
-    gap: 6px;
+  .footer-info {
+    gap: 8px;
   }
 
-  footer .social-icons {
+  .footer-info img {
+    width: 100px;
+  }
+
+  .social-icons {
     gap: 12px;
   }
 
-  footer .social-icons i {
+  .social-icons a {
     font-size: 1.4em;
   }
 
-  footer small {
+  .footer-copy {
     font-size: 0.85em;
   }
 }
