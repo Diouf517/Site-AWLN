@@ -1504,7 +1504,7 @@ img:hover {
 .sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 45px 0 0 0; /* ✅ descend la liste sous le bouton */
+  margin: 50px 0 0 0; /* ✅ descend la liste sous le bouton */
 }
 
 .sidebar ul li {
