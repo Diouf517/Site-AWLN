@@ -1429,7 +1429,7 @@ img:hover {
   position: fixed;
   top: 0;
   right: -100%; /* caché par défaut */
-  width: 60%; /* largeur du menu */
+  width: 55%; /* largeur du menu */
   height: 100%;
   background-color: #7E0051; /* violet AWLN */
   color: #fff;
