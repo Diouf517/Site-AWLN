@@ -1272,20 +1272,20 @@ img:hover {
   bottom: 0; /* bande collée au bas de l'image */
   left: 0;
   width: 100%; /* traverse toute l'image */
-  background-color: rgba(0,0,0,0.55); /* bande sombre semi-transparente */
+  background-color: rgba(0, 0, 0, 0.55); /* bande sombre semi-transparente */
   color: #fff;
-  font-size: 1em; /* texte réduit et élégant */
-  font-weight: 500;
-  padding: 10px 0;
+  font-size: 1.1em; /* texte plus visible */
+  font-weight: 600;
+  padding: 12px 0;
   text-align: center;
-  white-space: nowrap; /* une seule ligne */
   letter-spacing: 0.5px;
+  white-space: nowrap; /* une seule ligne */
 }
 
 /* Points de navigation */
 .dots {
   position: absolute;
-  bottom: 8px; /* colle les points juste sous la bande sombre */
+  bottom: 5px; /* colle les points juste sous la bande sombre */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -1306,7 +1306,7 @@ img:hover {
 /* ✅ Ajustements pour mobile */
 @media (max-width: 768px) {
   .carousel {
-    height: 360px; /* carrousel plus grand sur mobile */
+    height: 380px; /* carrousel plus grand sur mobile */
   }
 
   .carousel img {
@@ -1315,11 +1315,11 @@ img:hover {
   }
 
   .caption {
-    font-size: 0.85em; /* texte plus petit sur mobile */
-    padding: 8px 0;
+    font-size: 0.9em; /* texte légèrement réduit sur mobile */
+    padding: 10px 0;
   }
 
   .dots {
-    bottom: 5px; /* colle les points au bas exact du carrousel */
+    bottom: 3px; /* colle les points au bas exact du carrousel */
   }
 }
