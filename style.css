@@ -1265,3 +1265,78 @@ img:hover {
 .dot.active {
   background-color: #7E0051; /* violet */
 }
+/* Carrousel global */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Image du carrousel */
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Texte sur l'image */
+.caption {
+  position: absolute;
+  bottom: 45px; /* juste au-dessus des points */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.55);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Points de navigation */
+.dots {
+  position: absolute;
+  bottom: 10px; /* colle les points au bas du carrousel */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #7E0051; /* violet AWLN */
+}
+
+/* ✅ Ajustements pour mobile */
+@media (max-width: 768px) {
+  .carousel {
+    height: 360px; /* agrandit le carrousel sur mobile */
+  }
+
+  .carousel img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .caption {
+    font-size: 0.9em;
+    padding: 6px 16px;
+    bottom: 40px;
+  }
+
+  .dots {
+    bottom: 5px; /* colle les points au bas exact */
+  }
+}
