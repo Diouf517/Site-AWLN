@@ -1520,20 +1520,64 @@ img:hover {
 }
 /* Bouton fermer (✖) */
 .close-btn {
-  background: none !important;
-  border: none !important;
-  color: #fff !important;   /* force la couleur blanche */
-  font-size: 2rem;
+  background-color: #7E0051; /* fond violet AWLN */
+  border: 2px solid #D4AF37; /* cadre doré */
+  color: #fff; /* icône blanche */
+  font-size: 1.8rem;
   cursor: pointer;
+  border-radius: 8px; /* coins légèrement arrondis */
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 20px;
   right: 25px;
-  z-index: 2000;            /* assure qu'il reste visible */
+  z-index: 2000;
+  transition: all 0.3s ease;
 }
 
+/* Effet au survol */
+.close-btn:hover {
+  background-color: #D4AF37; /* fond doré au survol */
+  color: #7E0051; /* ✖ devient violet */
+  transform: scale(1.05);
+}
 /* Icônes flèches dans le menu */
 .sidebar ul li .arrow {
-  color: #fff !important;   /* force la couleur blanche */
-  margin-right: 8px;
-  font-size: 1.2em;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #fff; /* triangle blanc */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* Bouton fermer (✖) */
+.close-btn {
+  background-color: #7E0051;       /* fond violet AWLN */
+  border: 2px solid #D4AF37;       /* cadre doré */
+  color: #fff;                     /* ✖ blanc */
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 50%;              /* cercle élégant */
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 2000;
+  transition: all 0.3s ease;
+}
+
+/* Effet au survol */
+.close-btn:hover {
+  background-color: #D4AF37;       /* fond doré */
+  color: #7E0051;                  /* ✖ violet */
+  transform: scale(1.1);           /* léger zoom */
 }
