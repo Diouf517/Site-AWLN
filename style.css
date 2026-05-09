@@ -1229,3 +1229,76 @@ img:hover {
     margin: 0 auto;
   }
 }
+/* Carrousel global */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Images du carrousel */
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Points de navigation */
+.dots {
+  position: absolute;
+  bottom: 10px; /* proche du bas de l'image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #7E0051; /* violet */
+}
+
+/* Texte du carrousel */
+.caption {
+  position: absolute;
+  bottom: 40px; /* au-dessus des points */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.6); /* bande sombre */
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap; /* force une seule ligne */
+}
+
+/* ✅ Ajustements pour mobile */
+@media (max-width: 768px) {
+  .carousel {
+    height: 300px; /* augmente la hauteur sur mobile */
+  }
+
+  .carousel img {
+    height: 100%;
+    object-fit: cover; /* agrandit l’image sans déformation */
+  }
+
+  .caption {
+    font-size: 0.9em; /* texte plus petit */
+    padding: 5px 10px;
+    bottom: 35px;
+  }
+
+  .dots {
+    bottom: 8px; /* colle les points au bas */
+  }
+}
