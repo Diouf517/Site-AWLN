@@ -1424,3 +1424,49 @@ img:hover {
     font-size: 0.85em;
   }
 }
+/* Sidebar (menu mobile) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* caché par défaut */
+  width: 60%; /* largeur du menu */
+  height: 100%;
+  background-color: #7E0051; /* violet AWLN */
+  color: #fff;
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  z-index: 1000;
+}
+
+/* Quand le menu est actif */
+.sidebar.active {
+  right: 0; /* sort complètement */
+}
+
+/* Bouton fermer */
+.close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Liens du menu */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+}
