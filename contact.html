@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – AWLN Sénégal</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Import des icônes Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="topbar">
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="images/logo-awln.png" alt="Logo AWLN Sénégal" class="logo">
+    </a>
+  </div>
+
+  <nav class="navbar">
+    <!-- Menu horizontal (PC) -->
+    <ul class="nav-links desktop">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Bouton burger (mobile) -->
+    <button class="burger">
+  <span class="burger-icon"></span>
+</button>
+
+    <!-- ✅ Menu latéral coulissant vertical -->
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn">✖</button>
+      <ul>
+        <li><a href="index.html"><span class="arrow">▶</span> Accueil</a></li>
+        <li><a href="about.html"><span class="arrow">▶</span> À propos</a></li>
+        <li><a href="projects.html"><span class="arrow">▶</span> Projets</a></li>
+        <li><a href="realisations.html"><span class="arrow">▶</span> Réalisations</a></li>
+        <li><a href="contact.html"><span class="arrow">▶</span> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <!-- Image d’introduction -->
+  <section class="contact-banner">
+    <img src="images/contact-banner.png" alt="Femmes en discussion – AWLN Sénégal" class="banner-image">
+    <div class="banner-text">
+      <h2>Restons connectés pour agir ensemble</h2>
+      <p>AWLN Sénégal vous écoute et accompagne vos initiatives pour le leadership féminin et la paix.</p>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section class="contact">
+    <h1>Contactez-nous</h1>
+    <p>
+      Pour toute information, partenariat ou collaboration, n’hésitez pas à nous écrire.
+    </p>
+
+    <!-- Formulaire -->
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="fullname" placeholder="Nom complet" required>
+      <input type="email" name="email" placeholder="Adresse email" required>
+      <input type="tel" name="phone" placeholder="Téléphone" required>
+
+      <!-- Sujet du message avec menu déroulant -->
+      <div class="select-container">
+        <i class="fas fa-list"></i>
+        <select name="subject" required>
+          <option value="">Sujet du message</option>
+          <option value="partenariat">Partenariat</option>
+          <option value="benevolat">Bénévolat</option>
+          <option value="presse">Presse</option>
+          <option value="autre">Autre</option>
+        </select>
+      </div>
+
+      <textarea name="message" rows="6" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <!-- Logo en bas à gauche -->
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="images/logo-awln.png" alt="Logo AWLN Sénégal" class="footer-logo-img">
+        </a>
+      </div>
+
+      <!-- Coordonnées -->
+      <div class="footer-info">
+        <p><i class="fas fa-envelope"></i> contact@awlnsenegal.org</p>
+        <p><i class="fas fa-phone"></i> +221 77 000 00 00</p>
+        <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <p>&copy; 2026 AWLN Sénégal – Tous droits réservés</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

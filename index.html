@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>AWLN Sénégal - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="topbar">
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="images/logo-awln.png" alt="Logo AWLN Sénégal" class="logo">
+    </a>
+  </div>
+
+  <nav class="navbar">
+    <!-- Menu horizontal (PC) -->
+    <ul class="nav-links desktop">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="projects.html">Projets</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Bouton burger (mobile) -->
+    <button class="burger">
+  <span class="burger-icon"></span>
+</button>
+
+    <!-- ✅ Menu latéral coulissant vertical -->
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn">✖</button>
+      <ul>
+        <li><a href="index.html"><span class="arrow">▶</span> Accueil</a></li>
+        <li><a href="about.html"><span class="arrow">▶</span> À propos</a></li>
+        <li><a href="projects.html"><span class="arrow">▶</span> Projets</a></li>
+        <li><a href="realisations.html"><span class="arrow">▶</span> Réalisations</a></li>
+        <li><a href="contact.html"><span class="arrow">▶</span> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+  <!-- Carrousel -->
+  <section class="carousel">
+    <div class="slide fade">
+      <img src="images/slide1.png" alt="Leadership féminin">
+      <div class="caption">Leadership féminin en Afrique</div>
+    </div>
+    <div class="slide fade">
+      <img src="images/slide2.png" alt="Autonomisation des femmes">
+      <div class="caption">Autonomisation des femmes</div>
+    </div>
+    <div class="slide fade">
+      <img src="images/slide3.png" alt="Solidarité et paix">
+      <div class="caption">Solidarité et paix</div>
+    </div>
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- Bannière texte -->
+  <section class="hero">
+    <h1>Bienvenue sur AWLN Sénégal</h1>
+    <p>Leadership féminin – Paix – Autonomisation</p>
+    <a href="about.html" class="btn">Découvrir notre mission</a>
+  </section>
+
+  <!-- Nos actions -->
+  <section class="actions">
+    <h2>Nos Actions</h2>
+    <div class="actions-grid">
+      <div class="action-card">
+        <img src="images/action1.png" alt="Autonomisation">
+        <h3>Autonomisation</h3>
+        <p>Programmes pour renforcer les capacités économiques et sociales des femmes.</p>
+      </div>
+      <div class="action-card">
+        <img src="images/action2.png" alt="Leadership">
+        <h3>Leadership</h3>
+        <p>Initiatives pour promouvoir la participation des femmes dans la gouvernance.</p>
+      </div>
+      <div class="action-card">
+        <img src="images/action3.png" alt="Solidarité">
+        <h3>Solidarité</h3>
+        <p>Actions de paix et de cohésion sociale au sein des communautés.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Actualités -->
+  <section class="news">
+    <h2>Actualités récentes</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <h3>Atelier sur le leadership</h3>
+        <p class="date">Avril 2026</p>
+        <p>Formation des jeunes femmes sur la gouvernance locale.</p>
+        <a href="projet1.html" class="btn">Lire plus</a>
+      </div>
+      <div class="news-card">
+        <h3>Campagne de sensibilisation</h3>
+        <p class="date">Mars 2026</p>
+        <p>Mobilisation communautaire pour la paix et la cohésion sociale.</p>
+        <a href="projet2.html" class="btn">Lire plus</a>
+      </div>
+      <div class="news-card">
+        <h3>Conférence régionale</h3>
+        <p class="date">Février 2026</p>
+        <p>Rencontre des chapitres AWLN d’Afrique de l’Ouest.</p>
+        <a href="projet3.html" class="btn">Lire plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partenaires -->
+  <section class="partners">
+    <h2>Nos Partenaires</h2>
+    <div class="partners-logos">
+      <img src="images/onu.png" alt="ONU Femmes">
+      <img src="images/ua.png" alt="Union Africaine">
+      <img src="images/ministere.jpeg" alt="Ministère de la Femme">
+    </div>
+  </section>
+
+  <!-- Chiffres clés -->
+  <section class="stats">
+    <h2>Chiffres clés</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h3>+100</h3>
+        <p>Membres actifs</p>
+      </div>
+      <div class="stat-card">
+        <h3>5</h3>
+        <p>Projets nationaux</p>
+      </div>
+      <div class="stat-card">
+        <h3>3</h3>
+        <p>Partenariats internationaux</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appel à l’action -->
+  <section class="cta">
+    <h2>Rejoignez le réseau</h2>
+    <p>Participez à la promotion du leadership féminin et de la paix.</p>
+    <a href="contact.html" class="btn">Contactez-nous</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 AWLN Sénégal – Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
